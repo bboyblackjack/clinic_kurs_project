@@ -19,8 +19,8 @@ namespace WebServer.Controllers
             User user = JsonConvert.DeserializeObject<User>(json);
             user.RoleId = 1;
             _rep.Add(user);
-            //EmailNotifier.IEmailNotifier mail = new EmailNotifier.MailRuNotifier("abc@mail.ru", "password");
-           // mail.Send("Регистрация проведена!", "Регистрация успешно завершена", user.Email.ToString());
+            EmailNotifier.IEmailNotifier mail = new EmailNotifier.MailRuNotifier("3208607970@mail.ru", "3208607970@mail.ru");
+            mail.Send("Регистрация проведена!", "Регистрация успешно завершена на портале Vet Clinic", user.Email.ToString());
         }
     }
 }

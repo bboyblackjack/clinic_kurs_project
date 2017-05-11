@@ -17,6 +17,7 @@ namespace WebServer.Controllers
         TimeRepository _time = new TimeRepository();
         ServiceRepository _service = new ServiceRepository();
         CardRepository _card = new CardRepository();
+        PetRepository _pet = new PetRepository();
         DataContext db = new DataContext();
 
         // GET: api/Record
@@ -57,7 +58,20 @@ namespace WebServer.Controllers
             try
             {
                 _rep.Add(record);
-                return true;
+
+                record.User = _user.GetById(record.UserId);
+                record.Card = _card.GetById(record.CardId);
+                record.Card.Pet = _pet.GetById(record.Card.PetId);
+                record.Card.Pet.User = _user.GetById(record.Card.Pet.UserId);
+                record.Service = _service.GetById(record.ServiceId);
+                record.Time = _time.GetById(record.TimeId);
+                //рассылка по почте
+                EmailNotifier.IEmailNotifier mail = new EmailNotifier.MailRuNotifier("3208607970@mail.ru", "3208607970@mail.ru");
+                mail.Send("Заявка одобрена!", "Заявка номер " + record.RecordId + " для вашего питомца " + record.Card.Pet.Name + " одобрена.\n" +
+                "Услуга " + record.Service.Name + ".\n" + "Цена услуги " + record.Service.Price +
+                " рублей.\n" + "Время записи " + record.Time.Interval + ".", record.Card.Pet.User.Email.ToString());
+
+                return true; 
             }
             catch
             {
@@ -70,6 +84,17 @@ namespace WebServer.Controllers
         {
             try
             {
+                Record record = new Record();
+                record = _rep.GetById(id);
+                record.User = _user.GetById(record.UserId);
+                record.Card = _card.GetById(record.CardId);
+                record.Card.Pet = _pet.GetById(record.Card.PetId);
+                record.Card.Pet.User = _user.GetById(record.Card.Pet.UserId);
+
+                //рассылка по почте
+                EmailNotifier.IEmailNotifier mail = new EmailNotifier.MailRuNotifier("3208607970@mail.ru", "3208607970@mail.ru");
+                mail.Send("Заявка отменена!", "Заявка номер " + record.RecordId + " для вашего питомца " + record.Card.Pet.Name + " отменена.", record.Card.Pet.User.Email.ToString());
+
                 _rep.Remove(id);
                 return true;
             }
