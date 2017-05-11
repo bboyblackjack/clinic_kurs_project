@@ -52,6 +52,6 @@
         <ComboBox Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Style="{StaticResource TextboxStyle}" ItemsSource="{Binding Path=UserNames}" 
                   SelectedItem="{Binding Path=UserName}" SelectedValuePath="UserId" DisplayMemberPath="FullName" HorizontalAlignment="Center"/>
         <Button x:Name="Designate" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CommandDesignateService}" 
-                            Style="{StaticResource ButtonStyle}">Назанчить услугу</Button>
+                            Style="{StaticResource ButtonStyle}">Назначить услугу</Button>
     </Grid>
 </Window>

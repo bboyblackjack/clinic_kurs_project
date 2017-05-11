@@ -294,25 +294,40 @@ namespace DesktopClient.ViewModels
         private void DesignateService()
         {
             //получаем выбранную заявку
-            RecordsController.GetCurrentApp(GridApplications[SelectedIndexApplication].ApplicationId);
-
-            //открываем окно с назначением услуги
-            DesignateServiceWindow designateServiceWindow = new DesignateServiceWindow();
-            designateServiceWindow.Show();      
+            try
+            {
+                RecordsController.GetCurrentApp(GridApplications[SelectedIndexApplication].ApplicationId);
+                //открываем окно с назначением услуги
+                DesignateServiceWindow designateServiceWindow = new DesignateServiceWindow();
+                designateServiceWindow.Show();  
+            }
+            catch
+            {
+                MessageBox.Show("Выберите заявку!");
+            }
+                        
         }
 
         //Отменить услугу
         private  void CancelService()
         {
-            var result = RecordsController.Delete(GridRecords[SelectedIndexRecord].RecordId);
-            if (result)
+            try
             {
-                MessageBox.Show("Услуга отменена!");
+                var result = RecordsController.Delete(GridRecords[SelectedIndexRecord].RecordId);
+                if (result)
+                {
+                    MessageBox.Show("Услуга отменена!");
+                }
+                else
+                {
+                    MessageBox.Show("Произошла ошибка! Услуга не отменена!");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Произошла ошибка! Услуга не отменена!");
+                MessageBox.Show("Выберите услугу!");
             }
+                  
         }
 
        //Обновить данные
