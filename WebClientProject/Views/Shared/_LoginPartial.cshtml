@@ -1,0 +1,29 @@
+﻿
+
+<li class="hidden logged">@Html.ActionLink("Мои питомцы", "Pets", "Pets")</li>
+<li class="hidden logged">@Html.ActionLink("Услуги", "Services", "Service")</li>
+<li class="hidden logged">@Html.ActionLink("Личный кабинет", "Cabinet", "Cabinet")</li>
+<li>@Html.ActionLink("О нас", "About", "Home")</li>
+<li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+<li class="hidden not-logged">@Html.ActionLink("Регистрация", "Register", "Account")</li>
+<li class="hidden not-logged">@Html.ActionLink("Вход", "Login", "Account")</li>
+<li>
+    <a class="hidden logged" style="cursor: pointer;" onclick="logOut()">Выйти</a>
+</li>
+
+<script>
+    $(document).ready(function () {
+        if (localStorage['user'] != '') {
+            $('.logged').removeClass('hidden');
+        } else {
+            $('.not-logged').removeClass('hidden');
+        }
+    });
+
+    function logOut() {
+        localStorage['user'] = '';
+        localStorage['user_id'] = '';
+
+        window.location.href = 'http://localhost:61809';
+    }
+</script>

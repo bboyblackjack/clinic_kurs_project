@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Личный кабинет";
+}
+
+<center><h1>Личный кабинет</h1></center>
+<hr/>
+<form>
+    <div class="form-group">
+        <label>Имя:</label>
+        <input type="text" disabled class="form-control" id="FirstName" />
+    </div>
+    <div class="form-group">
+        <label>Фамилия:</label>
+        <input type="text" disabled class="form-control" id="LastName" />
+    </div>
+    <div class="form-group">
+        <label>Отчество:</label>
+        <input type="text" disabled class="form-control" id="MiddleName" />
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" id="Email" />
+    </div>
+    <div class="form-group">
+        <label>Логин:</label>
+        <input type="text" disabled class="form-control" id="Login" />
+    </div>
+    <div class="form-group">
+        <label>Телефонный номер:</label>
+        <input type="tel" class="form-control" id="Phone" />
+    </div>
+    <div class="form-group">
+        <label>Пароль:</label>
+        <input type="password" class="form-control" id="Password" />
+    </div>
+    <label><input type="checkbox" id="changer" />Проверить пароль</label>
+    <br />
+    <div class="btn-group">
+        @*<input type="submit" class="btn btn-success" id="Update" value="Изменить данные"/>*@
+        <a href="#" class="btn btn-success" id="Update">Обновить</a>
+    </div>
+</form>
+
+<script>
+    //Кнопка для проверки пароля (отображение)
+    $("#changer").on("change", function () {
+        if (this.checked) {
+            $("#Password").attr("type", "text");
+        }
+        else {
+            $("#Password").attr("type", "Password");
+        }
+    })
+
+    //Инициализация всех полей данными пользователя
+    $(document).ready(function () {
+        $.ajax({
+            url: "http://localhost:53444/api/account/" + localStorage['user_id'],
+            type: "GET",
+            success: function (e) {
+                $("input#FirstName").val(e.FirstName);
+                $("input#LastName").val(e.LastName);
+                $("input#MiddleName").val(e.MiddleName);
+                $("input#Email").val(e.Email);
+                $("input#Login").val(e.Login);
+                $("input#Phone").val(e.PhoneNumber);
+                $("input#Password").val(e.Password);
+            }
+        })
+    });
+
+    //Применение изменений
+    $("#Update").click(function () {
+        //Формирование данных для отправки
+        var data = {
+            FirstName: $("#FirstName").val(),
+            LastName: $("#LastName").val(),
+            MiddleName: $("#MiddleName").val(),
+            Email: $("#Email").val(),
+            Login: $("#Login").val(),
+            PhoneNumber: $("#Phone").val(),
+            Password: $("#Password").val()
+        };
+
+        $.ajax({
+            url: "http://localhost:53444/api/account/" + localStorage['user_id'],
+            method: "POST",
+            dataType: "json",
+            data: "=" + JSON.stringify(data),
+            success: function()
+            {
+                location.href = "/Cabinet/Cabinet";
+            }
+        })
+    });
+
+</script>

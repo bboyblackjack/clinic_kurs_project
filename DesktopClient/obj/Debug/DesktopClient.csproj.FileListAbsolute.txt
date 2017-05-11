@@ -1,0 +1,110 @@
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csprojResolveAssemblyReference.cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\App.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient_MarkupCompile.cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.g.resources
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.Properties.Resources.resources
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csproj.GenerateResource.Cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe.config
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\RestSharp.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\RestSharp.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\bin\Debug\EntityFramework.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.exe
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe.config
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\DesktopClient.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\RestSharp.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\RestSharp.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\App.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient_MarkupCompile.cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.g.resources
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.Properties.Resources.resources
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csproj.GenerateResource.Cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.exe
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient_MarkupCompile.lref
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\RestSharp.Newtonsoft.Json.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\AddCardWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\AddCardWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe.config
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.exe
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\DesktopClient.pdb
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\DataModel.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\Newtonsoft.Json.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\RestSharp.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\RestSharp.Newtonsoft.Json.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\System.Net.Http.Formatting.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\System.Windows.Interactivity.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\DataModel.pdb
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\Newtonsoft.Json.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\RestSharp.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\System.Net.Http.Formatting.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\ru\System.Net.Http.Formatting.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csprojResolveAssemblyReference.cache
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\AddCardWindow.baml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.baml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\AddCardWindow.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\AuthWindow.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\App.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient_MarkupCompile.cache
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient_MarkupCompile.lref
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\MainWindow.baml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.g.resources
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.Properties.Resources.resources
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csproj.GenerateResource.Cache
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.exe
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\DesktopClient.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\DesktopClient.csprojResolveAssemblyReference.cache
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\DesignateServiceWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\DesignateServiceWindow.baml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\EditCardWindow.g.cs
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DesktopClient\obj\Debug\Views\EditCardWindow.baml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\DesignateServiceWindow.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\EditCardWindow.g.cs
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\DesignateServiceWindow.baml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DesktopClient\obj\Debug\Views\EditCardWindow.baml

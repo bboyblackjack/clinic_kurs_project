@@ -1,0 +1,44 @@
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\obj\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\VetClinic 2.0\WebServer\DataModel\obj\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\obj\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\obj\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\DataModel.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+<<<<<<< HEAD
+=======
+C:\Users\Alina\Documents\ТПУ\4 курс\МиС проект. СиТ\vet_clinic 3.0\WebServer\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\DataModel.dll.config
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\DataModel.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\DataModel.pdb
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\EntityFramework.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\EntityFramework.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\obj\Debug\DataModel.dll
+D:\Учеба 4 курс\8 семестр\Курсач (МиС проект. СиТ)\Git\clinic_4.0\Hueta2.0\WebServer\DataModel\obj\Debug\DataModel.pdb
+>>>>>>> 5841bffc99950e9a3ee6b3b0f987abc735e115d9

@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Ветеринарная клиника «Vet Clinic»";
+}
+
+<hr/>
+@Html.Partial("~/Views/Home/About.cshtml")
+<hr/>
+<div class="image hidden">
+<div class="row" style="background: lightgreen; border-radius: 50px 50px 0 0;">
+    <div class="col-md-offset-5 col-md-2">
+        <img width="75%" src="~/Content/img/hz.png"/>
+    </div>
+    <style>
+    </style>
+    <div class="col-md-offset-5 col-md-2">
+        <a href="/Pets/Pets"><img width="75%" src="~/Content/img/pet.png"/></a>
+    </div>
+    <div class="col-md-offset-3 col-md-6"><center><p class="main-text lead">Перейдя в данную категорию 
+        можно добавить своего питомца, изменить или удалить его.</p></center></div>
+</div>
+<style>
+</style>
+<div class="row" style="background: lightblue; border-radius: 0 0 50px 50px">
+    <div class="col-md-offset-5 col-md-2">
+        <img width="75%" src="~/Content/img/hz.png" />
+    </div>
+    <div class="col-md-offset-5 col-md-2">
+        <a href="/Service/Services"><img width="75%" src="~/Content/img/service.png" /></a>
+    </div>
+    <div class="col-md-offset-3 col-md-6"><center><p class="main-text lead">В данной категории доступны такие услуги, 
+        как купирование, обрезка когтей и т.д.</p></center></div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+        if (localStorage['user'] != '') {
+            $('.image').removeClass('hidden');
+        }
+    });
+</script>

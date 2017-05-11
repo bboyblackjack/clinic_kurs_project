@@ -1,0 +1,131 @@
+﻿<Window x:Class="DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:local="clr-namespace:DesktopClient.ViewModels"
+         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="VetClinic" Height="700" Width="900" MinHeight="600" MinWidth="800">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style x:Key="ButtonStyle">
+            <Setter Property="Control.Height" Value="40"/>
+            <Setter Property="Control.Width" Value="120"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Control.VerticalAlignment" Value="Top"/>
+        </Style>
+        <Style x:Key="ButtonStyle2">
+            <Setter Property="Control.Margin" Value="10"/>
+            <Setter Property="Control.Height" Value="40"/>
+            <Setter Property="Control.Width" Value="170"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.HorizontalAlignment" Value="Right"/>
+            <Setter Property="Control.VerticalAlignment" Value="Top"/>
+        </Style>
+        <Style x:Key="LinkStyle">
+            <Setter Property="Control.Margin" Value="3"/>
+            <Setter Property="Control.Height" Value="20"/>
+            <Setter Property="Control.Width" Value="140"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.FontStyle" Value="Italic"/>
+            <Setter Property="Control.HorizontalAlignment" Value="Right"/>
+            <Setter Property="Control.VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Control.Foreground" Value="Blue"/>
+            <Setter Property="Control.Background" Value="White"/>
+            <Setter Property="Control.BorderBrush" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="30" Height="*"/>
+            <RowDefinition MinHeight="30" Height="*"/>
+            <RowDefinition MinHeight="600" Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="600" Width="3*"/>
+            <ColumnDefinition MinWidth="200" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Refresh" Grid.Column="1" Grid.Row="0" Command="{Binding CommandRefresh}" 
+                Style="{StaticResource LinkStyle}">
+            <TextBlock TextDecorations="Underline">Обновить данные</TextBlock>
+        </Button>
+        <Button x:Name="Logout" Grid.Column="1" Grid.Row="1" Command="{Binding CommandLogout}"
+                Style="{StaticResource LinkStyle}">
+            <TextBlock TextDecorations="Underline">Выйти</TextBlock>
+        </Button>
+        <TabControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10">
+            <TabItem Header="Все карточки" FontFamily="Arial" FontSize="15" FontWeight="Medium">
+                <Grid ShowGridLines="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition MinHeight="500" Height="5*"/>
+                        <RowDefinition MinHeight="100" Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MinWidth="280" Width="2*"/>
+                        <ColumnDefinition MaxWidth="140" Width="*"/>
+                        <ColumnDefinition MaxWidth="140" Width="*"/>
+                        <ColumnDefinition MaxWidth="140" Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="GridCards" Grid.Row="0" Grid.Column="0" GridLinesVisibility="All" 
+                              ItemsSource="{Binding GridCards}" AutoGenerateColumns="True" Width="400" Height="450" 
+                              SelectedIndex="{Binding SelectedIndexCard, Mode=TwoWay}" IsReadOnly="True">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged">
+                                <i:InvokeCommandAction Command="{Binding CommandSelectedCard}" 
+                                    CommandParameter="{Binding Path=SelectedIndexCard, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </DataGrid>
+                    <TextBox x:Name="Card" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Width="350" 
+                             Height="450" Text="{Binding Path=Card}" HorizontalScrollBarVisibility="Auto" />
+                    <Button x:Name="Add" Grid.Row="1" Grid.Column="1" Command="{Binding CommandAddCard}" 
+                            Style="{StaticResource ButtonStyle}">Добавить</Button>
+                    <Button x:Name="Edit" Grid.Row="1" Grid.Column="2" Command="{Binding CommandEditCard}" 
+                            Style="{StaticResource ButtonStyle}">Редактировать</Button>
+                    <Button x:Name="Delete" Grid.Row="1" Grid.Column="3" Command="{Binding CommandDeleteCard}" 
+                            Style="{StaticResource ButtonStyle}">Удалить</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Необработанные заявки" FontFamily="Arial" FontSize="15" FontWeight="Medium">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition MinHeight="500" Height="5*"/>
+                        <RowDefinition MinHeight="100" Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MinWidth="850" Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="GridApplications" Grid.Column="0" Grid.Row="0" GridLinesVisibility="All" 
+                              ItemsSource="{Binding GridApplications}" AutoGenerateColumns="True" Width="850" Height="500"
+                              SelectedIndex="{Binding SelectedIndexApplication, Mode=TwoWay}" IsReadOnly="True"></DataGrid>
+                    <Button x:Name="Reply" Grid.Row="1" Grid.Column="3" Command="{Binding CommandDesignateService}" 
+                            Style="{StaticResource ButtonStyle2}">Назначить услугу</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Обработанные заявки" FontFamily="Arial" FontSize="15" FontWeight="Medium">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition MinHeight="500" Height="5*"/>
+                        <RowDefinition MinHeight="100" Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MinWidth="850" Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="GridResponses" Grid.Column="0" Grid.Row="0" GridLinesVisibility="All" 
+                              ItemsSource="{Binding GridRecords}" AutoGenerateColumns="True" Width="850" Height="500"
+                              SelectedIndex="{Binding SelectedIndexRecord, Mode=TwoWay}" IsReadOnly="True"></DataGrid>
+                    <Button x:Name="Cancel" Grid.Row="1" Grid.Column="3" Command="{Binding CommandCancel}" 
+                            Style="{StaticResource ButtonStyle2}">Отменить услугу</Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

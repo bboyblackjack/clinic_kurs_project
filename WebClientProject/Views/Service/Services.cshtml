@@ -1,0 +1,219 @@
+﻿@{
+    ViewBag.Title = "Услуги";
+}
+<br/>
+<center><h1>Раздел услуг</h1></center>
+<hr/>
+<div class="tabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab-1" data-toggle="tab">Все услуги</a></li>
+        <li><a href="#tab-2" data-toggle="tab">Мои услуги</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active fade in" id="tab-1">
+            <h2>Все услуги</h2>
+            <hr/>
+            <center><form method="post" action="#">
+                <div class="form-group">
+                    <label>Тип услуги:</label>
+                    <select class="form-control" id="Types">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Услуга:</label>
+                    <select class="form-control" id="Services">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Цена услуги:</label>
+                    <input type="text" disabled class="form-control" id="Price"/>
+                </div>
+                <div class="from-group">
+                    <label>Дата:</label>
+                    <input type="date" class="form-control" id="Date"/>
+                </div>
+                <div class="form-group">
+                    <label>Время:</label>
+                    <select class="form-control" id="Time"></select>
+                </div>
+                <div class="form-group">
+                    <label>Питомец:</label>
+                    <select class="form-control" id="Pet"></select>
+                </div>
+                <a href="#" class="btn btn-warning" id="Ok">Выбрать</a>
+            </form></center>
+        </div>
+        <div class="tab-pane fade" id="tab-2">
+           <h2>Мои услуги</h2>
+            <hr/>
+            <table class="table" id="Apps">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Питомец</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    //Получение всех заявок на услуги
+    function GetApps() {
+        $.ajax({
+            url: "http://localhost:53444/api/application?id=" + localStorage['user_id'] + "&flag=1",
+            type: "GET",
+            success: function (e) {
+                if (e.length == 0) {
+                    $("table thead").remove();
+                    $("table").append("<center>Нет заявок на услуги</center>")
+                }
+                else {
+                    $.each(e, function (index, app) {
+                        $("table#Apps tbody").append(
+                            "<tr>" +
+                            "<td>" + app.Service.Name + "</td>" +
+                            "<td>" + app.Pet.Name + "</td>" +
+                            "<td>" + app.Date.split('T')[0] + "</td>" +
+                            "<td>" + app.Time.Interval + "</td>" +
+                            "<td><a href='#' onClick='DeleteApp(" + app.ApplicationId + ");'>Отменить</a></td>" +
+                            "</tr>")
+
+                    });
+                }
+            }
+
+        });
+    }
+
+    function DeleteApp(id) {
+        $.ajax({
+            url: "http://localhost:53444/api/application/",
+            type: "DELETE",
+            dataType: "json",
+            data: "=" + id,
+            success: function () {
+                location.href = "/Service/Services";
+            }
+        })
+    }
+
+    $(document).ready(function () {
+        GetApps();
+        //Заполнение типов сервисов
+        $.ajax({
+            url: "http://localhost:53444/api/typeofservice",
+            type: "GET",
+            async: false,
+            success: function (e) {
+                $.each(e, function (index, type) {
+                    $("select#Types").append("<option id=" + type.TypeOfServiceId + ">" + type.Name + "</option>");
+                });
+            }
+        });
+
+        var typeOfServiceId = $("select#Types option:selected").prop("id")
+
+        //Заполнение сервисов по типу
+        $.ajax({
+            url: "http://localhost:53444/api/service?id=" + typeOfServiceId + "&flag=1",
+            type: "GET",
+            async: false,
+            success: function (e) {
+                var f = 0;
+                $.each(e, function (index, service) {
+                    $("select#Services").append("<option id=" + service.ServiceId + ">" + service.Name + "</option>")
+                    if (f === 0) {
+                        $("#Price").val(service.Price);
+                    }
+                    f++;
+                });
+            }
+        });
+
+        //Изменение типа сервиса, цена
+        $("select#Types").change(function () {
+            var typeOfServiceId = $("select#Types option:selected").prop("id")
+            $("select#Services option").remove();
+            $.ajax({
+                url: "http://localhost:53444/api/service?id=" + typeOfServiceId + "&flag=1",
+                type: "GET",
+                async: false,
+                success: function (e) {
+                    var f = 0;
+                    $.each(e, function (index, service) {
+                        $("select#Services").append("<option id=" + service.ServiceId + ">" + service.Name + "</option>")
+                        if(f === 0)
+                        {
+                            $("#Price").val(service.Price);
+                        }
+                        f++;
+                    });
+                }
+            });
+        });
+
+        //Изменение цены
+        $("select#Services").change(function () {
+            var ServiceId = $("select#Services option:selected").prop("id")
+            $.ajax({
+                url: "http://localhost:53444/api/service/" + ServiceId,
+                type: "GET",
+                async: false,
+                success: function (service) {
+                    $("#Price").val(service.Price);
+                }
+            });
+        });
+
+        //Наверное что-то полезное
+        $.ajax({
+            url: "http://localhost:53444/api/time",
+            type: "GET",
+            success: function (e) {
+                $.each(e, function (index, time) {
+                    $("select#Time").append("<option id=" + time.TimeId + ">" + time.Interval + "</option>");
+                });
+            }
+        });
+
+        //Вывод всех петов
+        $.ajax({
+            url: "http://localhost:53444/api/Pet?id=" + localStorage['user_id'] + "&flag=1",
+            type: "GET",
+            success: function (e) {
+                $.each(e, function (index, pet) {
+                    $("select#Pet").append("<option id=" + pet.PetId + ">" + pet.Name + "</option>");
+                });
+            }
+        });
+
+        //Отправка запроса на сервак, для добавления зловещего пета в аппликатион
+        $("#Ok").click(function () {
+            var data = {
+                Date: $("#Date").val(),
+                UserId: localStorage['user_id'],
+                PetId: $("select#Pet option:selected").prop("id"),
+                TimeId: $("select#Time option:selected").prop("id"),
+                ServiceId: $("select#Services option:selected").prop("id")
+            };
+            $.ajax({
+                url: "http://localhost:53444/api/application",
+                type: "POST",
+                data: "=" + JSON.stringify(data),
+                success: function()
+                {
+                    GetApps();
+                }
+            });
+        });
+
+    });
+</script>

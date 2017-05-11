@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Мои питомцы";
+}
+
+<center><h1>Мои питомцы</h1></center>
+<hr/>
+<table class="table" id="Pets">
+    <thead>
+        <tr>
+            <th>Вид</th>
+            <th>Порода</th>
+            <th>Кличка</th>
+            <th>Цвет</th>
+            <th>Дата рождения</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<hr/>
+<a href="/Pets/CreatePet" class="btn btn-info btn-block">Добавить</a>
+
+<script>
+
+    function DeletePet(id) {
+        $.ajax({
+            url: "http://localhost:53444/api/Pet/" + id,
+            type: "DELETE",
+            dataType: "json",
+            success: function()
+            {
+                location.href = "/Pets/Pets";
+            }
+        })
+    }
+
+    function GetPets()
+    {
+        $.ajax({
+            url: "http://localhost:53444/api/Pet?id=" + localStorage['user_id'] + "&flag=1",
+            type: "GET",
+            success: function (e) {
+                if (e.length == 0) {
+                    $("table thead").remove();
+                    $("table").append("<center>Вы не создали ни одного питомца</center>")
+                }
+                else {
+                    $.each(e, function (index, pet) {
+                        $("table#Pets tbody").append(
+                            "<tr>" +
+                            "<td>" + pet.Kind.Name + "</td>" +
+                            "<td>" + pet.Breed.Name + "</td>" +
+                            "<td>" + pet.Name + "</td>" +
+                            "<td>" + pet.Color.Name + "</td>" +
+                            "<td>" + pet.Birthday.split('T')[0] + "</td>" +
+                            "<td><a href='#' onClick='DeletePet(" + pet.PetId + ");'>Удалить</a></td>" +
+                            "<td><a href='/Pets/UpdatePet/" + pet.PetId +  "'>Обновить</a></td>" +
+                            "</tr>")
+
+                    });
+                }
+            }
+
+        });
+    }
+
+    $(document).ready(function () {
+        GetPets();
+    });
+</script>

@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Обновить питомца";
+}
+
+<center><h1>Обновить питомца</h1></center>
+<hr />
+
+<center>
+    <form method="post" action="#">
+        <div class="form-group">
+            <label>Вид питомца: </label>
+            <select class="form-control" id="Kind">
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Порода питомца: </label>
+            <select class="form-control" id="Breed">
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Кличка питомца: </label>
+            <input type="text" class="form-control" id="Name" />
+        </div>
+        <div class="form-group">
+            <label>Окрас питомца: </label>
+            <select class="form-control" id="Color">
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Дата рождения: </label>
+            <input type="date" class="form-control" id="Birthday" />
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary" id="Update">Обновить питомца</a>
+            <a href="/Pets/Pets" class="btn btn-danger">Вернуться назад</a>
+        </div>
+    </form>
+</center>
+
+<script>
+
+    $(document).ready(function () {
+        //Получение всех типов питомцев
+        $.ajax({
+            url: "http://localhost:53444/api/kind",
+            type: "GET",
+            async: false,
+            success: function (e) {
+                $.each(e, function (index, kind) {
+                    $("select#Kind").append("<option id=" + kind.KindId + ">" + kind.Name + "</option>")
+                });
+            }
+        });
+
+        //Получение всех пород
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://localhost:53444/api/breed",
+                type: "GET",
+                async: false,
+                success: function (e) {
+                    $.each(e, function (index, breed) {
+                        $("select#Breed").append("<option id=" + breed.BreedId + ">" + breed.Name + "</option>")
+                    });
+                }
+            });
+        });
+
+        //Получение всех мастей
+        $.ajax({
+            url: "http://localhost:53444/api/color",
+            type: "GET",
+            async: false,
+            success: function (e) {
+                $.each(e, function (index, color) {
+                    $("select#Color").append("<option id=" + color.ColorId + ">" + color.Name + "</option>")
+                });
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:53444/api/pet/" + parseInt(@ViewBag.id),
+            type: "GET",
+            success: function(pet)
+            {
+                $("select#Kind option[id=" + pet.KindId + "]").attr('selected', 'true');
+                $("select#Breed option[id=" + pet.BreedId + "]").attr('selected', 'true');
+                $("select#Color option[id=" + pet.ColorId + "]").attr('selected', 'true');
+                $("#Name").val(pet.Name);
+                $("#Birthday").val(pet.Birthday.split('T')[0]);
+            }
+
+        })
+       
+        $("#Update").click(function () {
+            var id = parseInt(@ViewBag.id);
+            var data = {
+                Name: $("#Name").val(),
+                Birthday: $("#Birthday").val(),
+                UserId: localStorage['user_id'],
+                KindId: $("select#Kind option:selected").prop("id"),
+                BreedId: $("select#Breed option:selected").prop("id"),
+                ColorId: $("select#Color option:selected").prop("id"),
+            }
+
+            $.ajax({
+                url: "http://localhost:53444/api/Pet/" + id,
+                type: "PUT",
+                async: false,
+                data: "=" + JSON.stringify(data),
+                success: function () {
+                    alert("Питомец успешно обновлен");
+                    location.href = "/Pets/Pets";
+                }
+            });
+        });
+    });
+</script>

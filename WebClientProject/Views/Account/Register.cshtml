@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Регистрация";
+}
+
+<center><h1>Регистрация</h1></center>
+<hr/>
+<center>
+<form method="post" action="#">
+    <div class="form-group">
+        <label>Имя:</label>
+        <input type="text" class="form-control" id="FirstName"/>
+    </div>
+    <div class="form-group">
+        <label>Фамилия:</label>
+        <input type="text" class="form-control" id="LastName"/>
+    </div>
+    <div class="form-group">
+        <label>Отчество:</label>
+        <input type="text" class="form-control" id="MiddleName"/>
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" id="Email"/>
+    </div>
+    <div class="form-group">
+        <label>Логин:</label>
+        <input type="text" class="form-control" id="Login"/>
+    </div>
+    <div class="form-group">
+        <label>Телефонный номер:</label>
+        <input type="tel" class="form-control" id="Phone"/>
+    </div>
+    <div class="form-group">
+        <label>Пароль:</label>
+        <input type="password" class="form-control" id="Password"/>
+        <br/>
+        <label><input type="checkbox" id="changer"/>Проверить пароль</label>
+    </div>
+    <div class="btn-group">
+        <a href="#" class="btn btn-success" id="Register">Зарегистрироваться</a>
+        <input type="reset" class="btn btn-danger" title="Сбросить"/>
+    </div>
+</form>
+</center>
+@Scripts.Render("~/Scripts/jquery-1.10.2.js")
+<script>
+    $("#changer").on("change",function()
+    {
+        if(this.checked)
+        {
+            $("#Password").attr("type", "text");
+        }
+        else
+        {
+            $("#Password").attr("type", "Password");
+        }
+    })
+    $("#Register").click(function () {
+        var data = {
+            FirstName: $("#FirstName").val(),
+            LastName: $("#LastName").val(),
+            MiddleName: $("#MiddleName").val(),
+            Email: $("#Email").val(),
+            Login: $("#Login").val(),
+            PhoneNumber: $("#Phone").val(),
+            Password: $("#Password").val()
+        };
+
+        $.ajax({
+            url: "http://localhost:53444/api/register",
+            dataType: "json",
+            data: "=" + JSON.stringify(data),
+            type: "POST",
+            origin: "http://localhost:61809",
+            success: function (e) {
+                location.href = "/";
+            }
+        });
+    });
+</script>

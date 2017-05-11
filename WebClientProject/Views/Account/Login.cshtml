@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Войти";
+}
+
+<center><h1>Вход на портал</h1></center>
+<hr/>
+<center>
+    <form method="post" action="#">
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email"f class="form-control" id="Email"/>
+        </div>
+        <div class="form-group">
+            <label>Пароль:</label>
+            <input type="password" class="form-control" id="Password"/>
+        </div>
+        <a href="#" class="btn btn-success" id="Login">Войти</a>
+    </form>
+</center>
+
+<script>
+    $("#Login").click(function () {
+        var data = {
+            Email: $("#Email").val(),
+            Password: $("#Password").val()
+        };
+        $.ajax({
+            url: "http://localhost:53444/api/account",
+            dataType: "json",
+            data: "=" +  JSON.stringify(data),
+            type: "POST",
+            origin: "http://localhost:61809",
+            success: function (e) {
+                if (e != "empty") {
+                    localStorage['user'] = e.split(';')[0];
+                    localStorage['user_id'] = e.split(';')[1];
+                    location.href = "/";
+                }
+                else
+                {
+                    alert("Вы неправильно ввели Email или пароль!");
+                }
+            }
+        });
+    });
+</script>
