@@ -68,7 +68,10 @@ namespace DesktopClient.ViewModels
             }
             else
             {
-                MessageBox.Show("Услуга не была назначена! Проверьте ввод данных!");
+                MessageBox.Show("Услуга не была назначена! Скорей всего для этого питомца не создана карточка!");
+                var window = System.Windows.Application.Current.Windows[1];
+                if (window != null)
+                    window.Close();
             }
         }
 

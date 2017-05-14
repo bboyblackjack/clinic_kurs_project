@@ -286,7 +286,7 @@ namespace DesktopClient.ViewModels
             }
             else
             {
-                MessageBox.Show("Карточка не удалена, так как к ней привязаны записи на услуги!");
+                MessageBox.Show("Карточка не удалена, так как к ней привязаны данные записей на услуги!");
             }
         }
 

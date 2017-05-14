@@ -135,7 +135,7 @@ namespace DesktopClient.ViewModels
                 }
                 catch(FormatException)
                 {
-                    MessageBox.Show("Рост и вес должны быть числовыми!");
+                    MessageBox.Show("Рост и вес должны быть числовыми! Проверьте ввод данных!");
                     return;
                 }
                 Card newCard = new Card()
@@ -158,7 +158,7 @@ namespace DesktopClient.ViewModels
                 }
                 else
                 {
-                    MessageBox.Show("Карточка не была добавлена! Проверьте ввод данных!");
+                    MessageBox.Show("Карточка не была добавлена! Ошибка на сервере!");
                 }
                 
             }

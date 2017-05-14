@@ -116,7 +116,7 @@ namespace DesktopClient
 
             var response = client.Execute(request);
 
-            if (response.Content != "null")
+            if (response.Content != "false")
             {
                 var result = ApplicationController.Delete(app.ApplicationId);
                 string resultJSON = response.Content;

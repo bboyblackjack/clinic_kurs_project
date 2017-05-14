@@ -18,7 +18,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Name="Error" Foreground="Red" Margin="0 -30 0 0" Visibility="Collapsed"
-                       Grid.ColumnSpan="2">Ошибка аутентификации!</TextBlock>
+                       Grid.ColumnSpan="2">Ошибка авторизации!</TextBlock>
 
             <TextBlock Grid.Row="0" Grid.Column="0" Margin="0 0 15 15"
                        VerticalAlignment="Center" HorizontalAlignment="Right">E-mail</TextBlock>

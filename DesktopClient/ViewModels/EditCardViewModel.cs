@@ -58,12 +58,13 @@ namespace DesktopClient.ViewModels
             {
                 height = Convert.ToDouble(Height);
                 weight = Convert.ToDouble(Weight);
+                
             }
             catch
             {
                 MessageBox.Show("Рост и вес должны быть числовыми! Проверьте ввод данных!");
+                return;
             }
-
             var result = CardController.Edit(height, weight);
             if (result)
             {
@@ -74,7 +75,7 @@ namespace DesktopClient.ViewModels
             }
             else
             {
-                MessageBox.Show("Карточка не была изменена! Проверьте ввод данных!");
+                MessageBox.Show("Карточка не была изменена! Ошибка!");
             }
         }
     }

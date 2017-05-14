@@ -20,7 +20,7 @@ namespace WebServer.Controllers
             user.RoleId = 1;
             _rep.Add(user);
             EmailNotifier.IEmailNotifier mail = new EmailNotifier.MailRuNotifier("3208607970@mail.ru", "3208607970@mail.ru");
-            mail.Send("Регистрация проведена!", "Регистрация успешно завершена на портале Vet Clinic", user.Email.ToString());
+            mail.Send("Регистрация проведена!", "Регистрация успешно завершена на портале Vet Clinic!", user.Email.ToString());
         }
     }
 }
